@@ -26,7 +26,7 @@
     <div class="container px-5 py-24 mx-auto">
       <div class="text-center">
         <h1 class="sm:text-4xl text-4xl font-medium title-font text-white mb-4">Garanta agora sua vaga no treinamento <br>e comece a <span class="text-green-400">FAZER SEU PRÓPRIO ROBÔ DE INVESTIMENTO<span></h1>
-        <p class="text-xl xl:w-2/4 lg:w-3/4 mx-auto text-gray-400 ">Chegou a grande oportunidade de aprender a criar seu próprio robô para <b class="text-blue-400">META TRADER 5</b> sem a necessidade de saber programar.</p>
+        <p class="text-xl xl:w-2/4 lg:w-3/4 mx-auto text-gray-400 ">Descubra o que os grandes <b class="text-blue-400">INVESTIDORES INSTITUCIONAIS</b> fazem para ter rentabilidade ao longo prazo com robôs.</p>
         <div class="flex mt-6 justify-center">
           <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
         </div>
@@ -241,6 +241,53 @@
     </div>
   </section>
 
+  <section class="text-gray-400 mb-12 body-font relative">
+    <div class="container px-5 mx-auto">
+      <div class="flex flex-col text-center w-full">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Dúvidas frenquentes</h1>
+      </div>
+      <div class="w-full md:w-3/5 mx-auto p-8">
+        <div class="shadow-md">
+           <div class="tab w-full overflow-hidden border-t">
+              <input class="absolute opacity-0" id="tab-single-1" type="radio" name="tabs2">
+              <label class="block p-5 leading-normal cursor-pointer" for="tab-single-1">Não tenho experência com o Mercado Financeiro, posso fazer o treinamento?</label>
+              <div class="tab-content text-white bg-gray-700 overflow-hidden leading-normal">
+                 <p class="p-5">Mesmo começando do absoluto ZERO você será capaz de aprender a criar robôs lucrativos ao longo prazo.</p>
+              </div>
+           </div>
+           <div class="tab w-full overflow-hidden border-t">
+              <input class="absolute opacity-0" id="tab-single-2" type="radio" name="tabs2">
+              <label class="block p-5 leading-normal cursor-pointer" for="tab-single-2">O treinamento é gravado?</label>
+              <div class="tab-content text-white bg-gray-700 overflow-hidden leading-normal">
+                 <p class="p-5">Não, o treinamento é ao vivo com o Bruno, você deve marcar o horário do treinamento.</p>
+              </div>
+           </div>
+           <div class="tab w-full overflow-hidden border-t">
+              <input class="absolute opacity-0" id="tab-single-3" type="radio" name="tabs2">
+              <label class="block p-5 leading-normal cursor-pointer" for="tab-single-3">Posso ter vários robôs com a licença da ferramenta?</label>
+              <div class="tab-content text-white bg-gray-700 overflow-hidden leading-normal">
+                 <p class="p-5">SIM, você pode criar quantos robôs quiser na ferramenta.</p>
+              </div>
+           </div>
+           <div class="tab w-full overflow-hidden border-t">
+              <input class="absolute opacity-0" id="tab-single-4" type="radio" name="tabs2">
+              <label class="block p-5 leading-normal cursor-pointer" for="tab-single-4">Posso fazer qualquer estratégia com a ferramenta?</label>
+              <div class="tab-content text-white bg-gray-700 overflow-hidden leading-normal">
+                 <p class="p-5">Não, pois algumas estratégias não são possíveis de fazer com robôs mesmo programando. A ferramenta é bastante avançada e dar para fazer inumeras estratégias.</p>
+              </div>
+           </div>
+           <div class="tab w-full overflow-hidden border-t">
+              <input class="absolute opacity-0" id="tab-single-5" type="radio" name="tabs2">
+              <label class="block p-5 leading-normal cursor-pointer" for="tab-single-5">Tenho uma estratégia podemos fazer ela no treinamento?</label>
+              <div class="tab-content text-white bg-gray-700 overflow-hidden leading-normal">
+                 <p class="p-5">Sim, já que tem experiência com Mercado Financeiro a parte de Introdução ao Mercado Financeiro não é preciso. Mas a estratégia se for possível de fazer iremos fazer e validar ela.</p>
+              </div>
+           </div>
+        </div>
+     </div>
+    </div>
+  </section>
+
   <section class="text-gray-400 body-font">
     <div class="container mx-auto flex px-5 mb-10 items-center justify-center flex-col">
       <div class="flex flex-wrap mb-20 flex-col items-center text-center">
@@ -279,6 +326,23 @@
       </span>
     </div>
   </footer>
+
+  <script>
+    /* Optional Javascript to close the radio button version by clicking it again */
+    var myRadios = document.getElementsByName('tabs2');
+    var setCheck;
+    var x = 0;
+    for(x = 0; x < myRadios.length; x++){
+        myRadios[x].onclick = function(){
+            if(setCheck != this){
+                 setCheck = this;
+            }else{
+                this.checked = false;
+                setCheck = null;
+        }
+        };
+    }
+ </script>
 
 </body>
 </html>
